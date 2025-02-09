@@ -11,7 +11,7 @@ const Contact = () => {
   const [error, setError] = useState(null);
   const [message, setMessage] = useState(null);
 
-  const url = "http://localhost:4000";
+  const url = "https://portfolio-server-aqzj.onrender.com";
 
   const handleChange = (e) => {
     const { value, name } = e.target;
