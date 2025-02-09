@@ -1,0 +1,42 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+.project-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: min(100% - 2px, 650px);
+  margin: auto;
+}
+.project-items h1 {
+  align-self: center;
+  color: #fff;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+.project-items p {
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+.project-items img {
+  aspect-ratio: 5/2;
+  width: 100%;
+}
+.project-items a {
+  display: flex;
+  align-items: center;
+  color: var(--green);
+  gap: 5px;
+  align-self: flex-start;
+}
+.project-items a p {
+  text-decoration: underline;
+  color: var(--green);
+}
+.project-items a img {
+  aspect-ratio: 1/1;
+  width: 25px;
+}

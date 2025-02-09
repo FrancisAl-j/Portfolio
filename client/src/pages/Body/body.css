@@ -1,0 +1,49 @@
+.body-container {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  gap: 10px;
+  height: 100%;
+}
+
+.body-container aside,
+article {
+  background: var(--background);
+}
+
+@media (max-width: 720px) {
+  .body-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-container aside,
+  article {
+    height: 100%;
+  }
+  .body-container .show-menu {
+    position: fixed;
+    height: 100svh;
+    background-color: rgba(
+      33,
+      33,
+      33,
+      0.8
+    ); /* Adjust the alpha value (0.0 to 1.0) */
+
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in;
+    overflow: hidden;
+  }
+  .body-container .hide-menu {
+    top: -1300px;
+    transition: 0.3s ease-in;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+  .body-container .profile-body {
+    height: 100%;
+  }
+}

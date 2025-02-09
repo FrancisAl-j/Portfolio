@@ -1,0 +1,54 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 25px;
+}
+.carousel-container h1 {
+  font-size: 1.8rem;
+  color: var(--green);
+}
+.carousel-container .carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.carousel-container .carousel-wrapper .arrow {
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  background: var(--green);
+  border-radius: 50%;
+  width: 30px;
+}
+.items {
+  display: flex;
+  gap: 10px;
+  background-color: rgba(33, 33, 33, 0.8);
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+}
+.items .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items .image-container img {
+  aspect-ratio: 1/1;
+  width: 150px;
+}
+
+@media screen and (max-width: 720px) {
+  .items {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+
+body {
+  background: #000;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}

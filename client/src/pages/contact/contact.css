@@ -1,0 +1,76 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+
+.contact {
+  height: 85svh;
+  display: grid;
+  place-items: center;
+}
+.contact .contact-content {
+  margin: 0 10px;
+}
+.contact h1 {
+  font-size: 2rem;
+  color: var(--green);
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 40px;
+}
+.contact form .pair-elements {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.contact form .input-element {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+}
+.contact form .input-element input {
+  background: var(--grayish-white);
+  padding: 8px 15px;
+  border-radius: 25px;
+}
+.contact form .input-element textarea {
+  padding: 5px 10px;
+  border-radius: 15px;
+  resize: none;
+  background: var(--grayish-white);
+}
+.contact form .input-element span {
+  color: #fff;
+}
+.contact form button {
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: white 1px solid;
+  color: #fff;
+  padding: 10px 40px;
+  align-self: center;
+  border-radius: 20px;
+}
+.contact form button:hover {
+  background: var(--green);
+  color: #000;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
+@media screen and (max-width: 720px) {
+  .contact form .pair-elements {
+    flex-direction: column;
+  }
+}

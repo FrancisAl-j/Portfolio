@@ -1,0 +1,104 @@
+* {
+  text-decoration: none;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.menu header {
+  display: none;
+}
+.menu header h1 {
+  color: red;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.menu li {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  background: var(--container);
+  padding: 8px 15px;
+  gap: 20px;
+}
+.menu li:hover {
+  background: var(--gray);
+}
+.menu li img {
+  aspect-ratio: 1/1;
+  width: 25px;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+}
+.eyes-container {
+  display: flex;
+  gap: 10px;
+}
+.eye {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.face-container {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #a52a2a;
+  padding-top: 20px;
+}
+.mouth {
+  aspect-ratio: 4/2;
+  width: 300px;
+}
+.eyelid1 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #a52a2a;
+  height: 10px; /* 60px close */
+  z-index: 1;
+}
+.mobile1 {
+  display: none;
+}
+
+/* For smaller screens */
+
+/* ! For Table */
+@media screen and (max-width: 720px) {
+  .face-container {
+    display: none;
+  }
+  .menu header {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 40px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile1 {
+    display: flex;
+  }
+}
+
+/* ! For Cellphone */
+@media screen and (max-width: 480px) {
+}

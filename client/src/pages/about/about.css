@@ -1,0 +1,30 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+
+.about {
+  height: 85svh;
+  padding: 10px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.about .about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about .about-content h1 {
+  font-weight: 500;
+  font-size: clamp(1rem, 3vw, 2rem);
+  color: var(--green);
+}
+.about .about-content p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-align: justify;
+  line-height: 30px;
+}

@@ -1,0 +1,16 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  width: min(100% - 5px, 1400px);
+  margin: auto;
+}

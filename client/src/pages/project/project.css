@@ -1,0 +1,6 @@
+.project {
+  height: 85svh;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}

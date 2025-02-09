@@ -1,0 +1,73 @@
+:root {
+  --green: #1db954;
+  --background: #121212;
+  --container: #212121;
+  --gray: #535353;
+  --grayish-white: #b3b3b3;
+}
+
+.home {
+  padding: 10px;
+  height: 85svh;
+  display: grid;
+  place-items: center;
+}
+.home .header-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.home .header-home .header-content {
+  width: min(100% - 1px, 450px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home .header-home .header-content h1 {
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+}
+.home .header-home .header-content p {
+  text-align: justify;
+}
+.home .header-home .header-content .icons {
+  margin: 10px 0;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+.home .header-home .header-content .icons button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background: var(--grayish-white);
+  border: none;
+  border-radius: 20px;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.home .header-home .header-content .icons img {
+  aspect-ratio: 1/1;
+  width: 30px;
+}
+.home .header-home .header-content .icons button:hover {
+  background: var(--green);
+  color: #fff;
+}
+.home .header-home img {
+  aspect-ratio: 1/1;
+  width: min(100% - 1px, 250px);
+  border-radius: 50%;
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+}
