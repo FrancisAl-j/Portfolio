@@ -4,3 +4,10 @@
   display: grid;
   place-items: center;
 }
+
+@media screen and (max-width: 720px) {
+  .project {
+    height: 100%;
+    margin: 40px;
+  }
+}

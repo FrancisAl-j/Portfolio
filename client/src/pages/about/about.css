@@ -28,3 +28,10 @@
   text-align: justify;
   line-height: 30px;
 }
+
+@media screen and (max-width: 720px) {
+  .about {
+    height: 100%;
+    margin: 40px;
+  }
+}
